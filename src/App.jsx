@@ -3,13 +3,16 @@ import Header from './components/Header';
 import News from './components/News';
 import { useState, useEffect } from 'react';
 
+
 function App() {
   const [data, setData] = useState({});
   const [category, setCategory] = useState('general');
+  
+
 
   useEffect(() => {
     async function getData() {
-      const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=29e1511c6a73427e89156ae72398f34c&category=${category}`);
+      const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${import.meta.env.VITE_NEWS_API_KEY}&category=${category}`);
       const resData = await response.json();
       setData(resData);
     }
