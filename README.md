@@ -1,8 +1,13 @@
-# React + Vite
+React NewsApp
+React NewsApp is a simple news application that fetches and displays the latest news articles based on different categories. The app is built with React + Vite, styled using Tailwind CSS, and deployed on GitHub Pages.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Fetches news articles based on selected categories.
+Responsive design with Tailwind CSS.
+Dynamic search functionality.
 
-Currently, two official plugins are available:
+Hooks Used
+useState: Manages the state of news data and selected category.
+useEffect: Fetches news data when the component mounts or the category changes.
+useContext: Shares news data between components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
